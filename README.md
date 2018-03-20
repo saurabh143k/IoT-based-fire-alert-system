@@ -1,4 +1,5 @@
 # IoT-based-fire-alert-system
+
 int red_led_pin = A2; #connect red led to the A2 pin of Arduino
 
 int green_led_pin = A1; #connect green led to the A1 pin of Arduino
@@ -8,6 +9,7 @@ int buzzer_pin = 10; #connect buzzer to the 10 pin of Arduino
 int smoke_sensor_pin = A0; #connect smoke sensor to the A0 pin of Arduino
 
 void setup()
+
 {
   pinMode(red_led_pin, OUTPUT);
 
@@ -20,6 +22,7 @@ void setup()
 }
 
 void loop() 
+
 {
    int analogSensor = analogRead(smoke_sensor_pin);
    
@@ -35,6 +38,7 @@ void loop()
     tone(buzzer_pin,1000,200);
 
   }
+  
    else
 
   {
