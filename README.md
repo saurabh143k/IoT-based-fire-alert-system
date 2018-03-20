@@ -11,6 +11,7 @@ int smoke_sensor_pin = A0; #connect smoke sensor to the A0 pin of Arduino
 void setup()
 
 {
+
   pinMode(red_led_pin, OUTPUT);
 
   pinMode(green_led_pin, OUTPUT);
@@ -24,6 +25,7 @@ void setup()
 void loop() 
 
 {
+
    int analogSensor = analogRead(smoke_sensor_pin);
    
 
